@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>UpdateBooking</name>
+   <name>PartialUpdateBooking</name>
    <tag></tag>
-   <elementGuidId>00902c77-7b31-4d3d-8752-dba136e1c8b3</elementGuidId>
+   <elementGuidId>41058596-c81d-4e59-8e31-683e1bbd120e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -12,7 +12,7 @@
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;${GlobalVariable.firstname}\&quot;,\n    \&quot;lastname\&quot; : \&quot;${GlobalVariable.lastname}\&quot;,\n    \&quot;totalprice\&quot; : 111,\n    \&quot;depositpaid\&quot; : true,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2024-12-21\&quot;,\n        \&quot;checkout\&quot; : \&quot;2024-12-23\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;Breakfast\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;${GlobalVariable.firstname}\&quot;,\n    \&quot;lastname\&quot; :  \&quot;${GlobalVariable.lastname}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -23,7 +23,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>5b83ddaf-a188-4a8e-9a97-7ffb5493651f</webElementGuid>
+      <webElementGuid>278dd15a-dd09-401a-9d84-dadc62bb82a7</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>c1bd1e0d-3413-424f-80df-b2f6fd42deee</webElementGuid>
+      <webElementGuid>0cc3f999-b40d-4915-bb31-c9a9fd52ce9f</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -39,13 +39,13 @@
       <name>Cookie</name>
       <type>Main</type>
       <value>token=${GlobalVariable.token}</value>
-      <webElementGuid>a1efc82e-43e4-4746-a8ae-15bcab0f5bbe</webElementGuid>
+      <webElementGuid>86f967a7-d987-478a-b1b0-7909a1651e9e</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.7.2</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>PATCH</restRequestMethod>
    <restUrl>${GlobalVariable.baseUrl}booking/${GlobalVariable.bookingid}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
